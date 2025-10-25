@@ -1,0 +1,27 @@
+cameras:
+  - id: 0
+    source: 0  # Camera index or video file path
+    resolution: [1920, 1080]
+    fps: 30
+    intrinsics:
+      fx: 1000.0
+      fy: 1000.0
+      cx: 960.0
+      cy: 540.0
+      distortion: [0.0, 0.0, 0.0, 0.0, 0.0]
+    extrinsics:
+      translation: [0.0, 0.0, 0.0]
+      rotation: [0.0, 0.0, 0.0, 1.0]  # quaternion w,x,y,z
+  - id: 1
+    source: 1
+    resolution: [1920, 1080]
+    fps: 30
+    intrinsics:
+      fx: 1000.0
+      fy: 1000.0
+      cx: 960.0
+      cy: 540.0
+      distortion: [0.0, 0.0, 0.0, 0.0, 0.0]
+    extrinsics:
+      translation: [1.0, 0.0, 0.0]  # 1 meter apart
+      rotation: [0.0, 0.0, 0.0, 1.0]

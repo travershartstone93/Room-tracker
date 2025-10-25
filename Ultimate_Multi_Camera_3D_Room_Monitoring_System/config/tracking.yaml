@@ -1,0 +1,36 @@
+tracking:
+  detection_confidence: 0.5
+  depth_confidence: 0.6
+  nms_threshold: 0.45
+  max_frames_lost: 30
+  position_threshold: 0.15
+  velocity_smoothing: 0.7
+  grace_period: 5.0
+  held_distance: 0.4
+  occlusion_timeout: 30
+  transient_period: 3600
+  min_cameras_to_confirm: 2
+  triangulation_max_error: 0.5
+  depth_inconsistency: 1.0
+  velocity_alerts:
+    chair: 0.5
+    table: 0.3
+    couch: 0.2
+    bed: 0.1
+  deformable_classes:
+    - "person"
+    - "clothing"
+    - "bag"
+  whitelist:
+    - "person"
+    - "chair"
+    - "table"
+    - "couch"
+    - "bed"
+    - "laptop"
+    - "book"
+    - "bottle"
+  blacklist:
+    - "wall"
+    - "ceiling"
+    - "floor"
